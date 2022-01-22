@@ -1,22 +1,13 @@
 import React from "react";
 import imgBackground from "../assets/fireball.gif";
-import {
-  PlayCircle,
-  Instagram,
-  Facebook,
-  Twitter
-} from "@mui/icons-material/";
+import { PlayCircle, Instagram, Facebook, Twitter } from "@mui/icons-material/";
 export default function Banner() {
   return (
     <main id="bannerArea">
       <aside id="contactArea">
-      
-       
-        <Instagram style={{color: '#fff', fontSize: 25}}/>
-        <Facebook style={{color: '#fff', fontSize: 25}}/>
-        <Twitter style={{color: '#fff', fontSize: 25}}/>
-        
-      
+        <Instagram style={{ color: "#fff", fontSize: 25, cursor: "pointer" }} />
+        <Facebook style={{ color: "#fff", fontSize: 25, cursor: "pointer" }} />
+        <Twitter style={{ color: "#fff", fontSize: 25, cursor: "pointer" }} />
       </aside>
 
       <section id="mainInfo">
@@ -45,6 +36,16 @@ export default function Banner() {
         <div id="imgBackground">
           <img src={imgBackground} alt="imgBackground" />
         </div>
+        <span className="contactMobile">
+          {" "}
+          <Instagram
+            style={{ color: "#fff", fontSize: 25, cursor: "pointer" }}
+          />
+          <Facebook
+            style={{ color: "#fff", fontSize: 25, cursor: "pointer" }}
+          />
+          <Twitter style={{ color: "#fff", fontSize: 25, cursor: "pointer" }} />
+        </span>
       </section>
     </main>
   );

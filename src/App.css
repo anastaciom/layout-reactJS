@@ -15,8 +15,10 @@ header {
   padding: 40px;
   border-bottom: 1px solid rgb(37, 35, 41);
 }
-
-#navbar {
+.btnMenuMobile {
+  display: none;
+}
+.navbar {
   display: flex;
   align-items: center;
   color: #fff;
@@ -26,13 +28,14 @@ header {
   font-size: 18px;
 }
 
-#navbar ul {
+.navbar ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
   list-style: none;
 }
+
 .navItem {
   cursor: pointer;
 }
@@ -77,7 +80,9 @@ header {
   padding-left: 20px;
   gap: 30px;
 }
-
+.contactMobile {
+  display: none;
+}
 #mainInfo {
   display: flex;
   align-items: center;
@@ -154,21 +159,20 @@ header {
   text-align: start;
 }
 
-#card-description h3{
+#card-description h3 {
   font-size: 18px;
-width: 80%;
-text-transform: uppercase;
-letter-spacing: 3px;
-padding: 10px;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px;
 }
 
-#card-description small{
+#card-description small {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   padding-left: 10px;
 }
-
 
 #imgBackground {
   width: 40%;
@@ -177,4 +181,171 @@ padding: 10px;
 #imgBackground img {
   width: 100%;
   height: 100%;
+}
+
+/* ============================================================================== */
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgb(37, 35, 41);
+  }
+  .btnMenuMobile {
+    display: initial;
+    z-index: 1000;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .btnMenuMobile:active,
+  .btnMenuMobile:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+
+  #logo img {
+    width: 120px;
+    height: 100%;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .active ul {
+    background-color: rgba(0, 0, 0, 0.979);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: showMenuBar;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes showMenuBar {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+  }
+
+  .navItem {
+    cursor: pointer;
+  }
+
+  #btnStart {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  #bannerArea {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contactArea {
+    display: none;
+  }
+
+  .contactMobile {
+    background-color: rgb(22, 1, 46);
+    position: fixed;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+  }
+
+  #mainInfo div {
+    height: 100%;
+  }
+
+  #bannerInfo {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  #description {
+    width: 90%;
+  }
+  #description h1 {
+    font-size: 45px;
+  }
+
+  #description p {
+    font-size: 12px;
+  }
+
+  #infoCard {
+    width: 100%;
+  }
+
+  #boxVideo {
+    flex: 2;
+    height: 100%;
+  }
+
+  #card-description h3 {
+    font-size: 10px;
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px;
+  }
+
+  #card-description small {
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+
+  #card-description {
+    height: 90%;
+  }
+
+  #imgBackground {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
 }
