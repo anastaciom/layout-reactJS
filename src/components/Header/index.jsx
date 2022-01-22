@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
+import "./style.css"
 import { Close, Menu } from "@mui/icons-material/";
 
 export default function Header() {

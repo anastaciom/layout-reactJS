@@ -1,6 +1,9 @@
 import React from "react";
-import imgBackground from "../assets/fireball.gif";
+import imgBackground from "../../assets/fireball.gif";
 import { PlayCircle, Instagram, Facebook, Twitter } from "@mui/icons-material/";
+import "./style.css"
+
+
 export default function Banner() {
   return (
     <main id="bannerArea">
