@@ -7,8 +7,8 @@ export default function Description() {
       <div id="description">
         <h1>Discover the new reality</h1>
         <p>
-          We've entered into a New Reality and Discover our approach to business
-          transformation four strategic angles_____________________________
+          We enter a new reality!!!! Observe our Planet with our robots and
+          satellites_____________________________
         </p>
       </div>
       <CardVideo />
