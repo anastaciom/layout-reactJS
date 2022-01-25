@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
-import "./style.css"
+import "./style.css";
 import { Close, Menu } from "@mui/icons-material/";
+import Items from "./Items";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(true);
@@ -26,11 +27,7 @@ export default function Header() {
         <div id="logo">
           <img src={Logo} alt="logo" />
         </div>
-        <ul>
-          <li className="navItem">Service</li>
-          <li className="navItem">Feature</li>
-          <li className="navItem">Support</li>
-        </ul>
+        <Items />
         <button id="btnStart">Start Now</button>
       </nav>
     </header>
