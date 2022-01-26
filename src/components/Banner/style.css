@@ -226,19 +226,20 @@
 
   #imgBackground {
     width: 100%;
-    height: 90%;
-    position: fixed;
-    top: -180px;
+    height: 60%;
+    position: absolute;
+    top: -190px;
     right: 0px;
-    margin-right: -200px;
+    overflow-x: clip; 
+    overflow-clip-margin: 200px;
   }
 
   #imgBackground img {
     width: 100%;
     height: 100%;
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
   }
 
   .contactMobile {
@@ -314,20 +315,20 @@
 
   #imgBackground {
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: -300px;
+    height: 60%;
+    position: absolute;
+    top: -190px;
     right: 0px;
-    margin-right: -290px;
-    transform: rotate(255deg);
+    overflow-x: clip; 
+    overflow-clip-margin: 200px;
   }
 
   #imgBackground img {
     width: 100%;
     height: 100%;
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
   }
 
   .contactMobile {
@@ -391,21 +392,22 @@
 
   #imgBackground {
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: -500px;
+    height: 60%;
+    position: absolute;
+    top: -350px;
     right: 0px;
-    margin-right: -500px;
-    transform: rotate(-300deg);
+    overflow-x: clip; 
+    overflow-clip-margin: 200px;
   }
 
   #imgBackground img {
     width: 100%;
     height: 100%;
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
   }
+
 
   .contactMobile {
     background-color: rgb(22, 1, 46);
