@@ -1,0 +1,115 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#iconsLoading {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 30px;
+  gap: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#linearProgress {
+  width: 10%;
+}
+#imgLoading {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in 0.8s;
+}
+.loading img {
+  animation-name: imgEffect;
+  animation-duration: 2s;
+}
+
+@keyframes imgEffect {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(80%);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #linearProgress {
+    width: 50%;
+  }
+
+  #iconsLoading {
+    font-size: 20px;
+    gap: 15px;
+  }
+  .loading img {
+    animation-name: imgEffect;
+    animation-duration: 2.2s;
+  }
+  @keyframes imgEffect {
+    from {
+      transform: translateY(-650px);
+    }
+    to {
+      transform: translateY(-190px);
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+  #linearProgress {
+    width: 50%;
+  }
+
+  #iconsLoading {
+    font-size: 20px;
+    gap: 15px;
+  }
+  .loading img {
+    animation-name: imgEffect;
+    animation-duration: 2.2s;
+  }
+  @keyframes imgEffect {
+    from {
+      transform: translateY(-650px);
+    }
+    to {
+      transform: translateY(-190px);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #linearProgress {
+    width: 60%;
+  }
+
+  #iconsLoading {
+    font-size: 30px;
+    gap: 20px;
+  }
+  .loading img {
+    animation-name: imgEffect;
+    animation-duration: 2.2s;
+    width: 100%;
+  }
+  @keyframes imgEffect {
+    from {
+      transform: translateY(-850px);
+    }
+    to {
+      transform: translateY(-600px);
+    }
+  }
+}

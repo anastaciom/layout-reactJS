@@ -3,31 +3,29 @@ import AreaPhotos from "./components/AreaPhotos";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import React, { useEffect, useState } from "react";
+import Loading from "./components/Loading";
 
 function App() {
-  const [headerBackground, setHeaderBackground] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const scrollListener = () => {
-      if (window.scrollY > 10) {
-        setHeaderBackground(true);
-      } else {
-        setHeaderBackground(false);
-      }
-    };
-
-    window.addEventListener("scroll", scrollListener);
-
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3200);
   }, []);
 
   return (
     <div className="App">
-      <Header background={headerBackground} />
-      <Banner />
-      <AreaPhotos />
+      {loading ? (
+       <Loading loading={loading}/>
+      ) : (
+        <>
+          <Header />
+          <Banner />
+          <AreaPhotos />
+        </>
+      )}
     </div>
   );
 }
