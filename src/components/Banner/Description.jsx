@@ -5,10 +5,10 @@ export default function Description() {
   return (
     <div id="bannerInfo">
       <div id="description">
-        <h1>Discover the new reality</h1>
+        <h1>Discover <br/> the new reality</h1>
         <p>
-          We enter a new reality!!!! Observe our Planet with our robots and
-          satellites_____________________________
+          We enter a new reality!!!! Observe Mars with our robots and
+          satellites_____________
         </p>
       </div>
       <CardVideo />

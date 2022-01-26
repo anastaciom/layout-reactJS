@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Facebook, Twitter } from "@mui/icons-material/";
+import { Instagram, Facebook, Twitter} from "@mui/icons-material/";
 
 export default function ContactAreaMobile() {
   return (

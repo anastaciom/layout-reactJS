@@ -1,435 +1,420 @@
 #bannerArea {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #contactArea {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 90px;
-    padding-left: 20px;
-    gap: 30px;
-  }
-  .contactMobile {
-    display: none;
-  }
-  #mainInfo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    height: 100%;
-  }
-  
-  #mainInfo div {
-    height: 100%;
-  }
-  
-  #bannerInfo {
-    width: 60%;
-    color: #fff;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 150px;
-  }
-  #description {
-    flex: 3;
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-  }
-  #description h1 {
-    font-size: 90px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  #description p {
-    padding-top: 20px;
-    font-size: 20px;
-    letter-spacing: 1px;
-  }
-  
-  #infoCard {
-    flex: 1;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  
-  #boxVideo {
-    flex: 2;
-    height: 100%;
-    background-image: url("../../assets/robo.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-  }
-  
-  #card-description {
-    flex: 3;
-    height: 60%;
-    border-radius: 0px 20px 20px 0px;
-    background: rgba(255, 255, 255, 0.384);
-    background: linear-gradient(
-      100deg,
-      rgba(255, 255, 255, 0.384) 30%,
-      transparent 70%
-    );
-    text-align: start;
-  }
-  
-  #card-description h3 {
-    font-size: 18px;
-    width: 80%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 10px;
-  }
-  
-  #card-description small {
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-left: 10px;
-  }
-  
-  #imgBackground {
-    width: 40%;
-  }
-  
-  #imgBackground img {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.contactMobile {
+  display: none;
+}
+
+#bannerInfo {
+  width: 50%;
+  height: inherit;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#description {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+#description h1 {
+  width: 60%;
+  font-size: 100px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 92px;
+  text-align: start;
+}
+
+#description p {
+  width: 60%;
+  padding-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+
+#contactArea {
+  display: flex;
+  width: 23%;
+  height: 100%;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+#infoCard {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#boxVideo {
+  height: 180px;
+  width: 230px;
+  background-image: url("../../assets/robo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-description {
+  height: 150px;
+  width: 80%;
+  border-radius: 0px 20px 20px 0px;
+  background: rgba(255, 255, 255, 0.11);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0.11) 30%,
+    transparent 70%
+  );
+  text-align: start;
+}
+
+#card-description h3 {
+  font-size: 22px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+#card-description small {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+#imgBackground {
+  width: 50%;
+}
+
+#imgBackground img {
+  width: 90%;
+  max-height: 90%;
+}
 
 /* =============================================== */
 
 @media (width: 1366px) {
-    #description h1 {
-      font-size: 70px;
-    }
-  
-    #infoCard {
-      width: 70%;
-      flex: 1;
-    }
-  
-    #bannerInfo {
-      width: 60%;
-      color: #fff;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      padding-left: 150px;
-    }
-    #description {
-      width: 90%;
-    }
-    #description h1 {
-      font-size: 70px;
-    }
-  
-    #infoCard {
-      width: 60%;
-      margin-bottom: 10px;
-    }
-  
-    #card-description {
-      height: 70%;
-    }
-  
-    #card-description h3 {
-      font-size: 16px;
-    }
-  
-    #card-description small {
-      font-size: 12px;
-    }
+  #description h1 {
+    font-size: 70px;
+    line-height: 75px;
   }
-  
-  @media screen and (max-width: 660px) {
-    
-  
-    #bannerArea {
-      width: 100%;
-      height: 85%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    #contactArea {
-      display: none;
-    }
-  
-    .contactMobile {
-      background-color: rgb(22, 1, 46);
-      position: fixed;
-      width: 100%;
-      padding: 8px;
-      bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-  
-    #mainInfo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      height: 100%;
-    }
-  
-    #mainInfo div {
-      height: 100%;
-    }
-  
-    #bannerInfo {
-      width: 100%;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      padding-left: 10px;
-    }
-    #description {
-      width: 90%;
-    }
-    #description h1 {
-      font-size: 45px;
-    }
-  
-    #description p {
-      font-size: 12px;
-    }
-  
-    #infoCard {
-      width: 100%;
-    }
-  
-    #boxVideo {
-      flex: 2;
-      height: 100%;
-    }
-  
-    #card-description h3 {
-      font-size: 15px;
-      width: 90%;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      padding: 5px;
-    }
-  
-    #card-description small {
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      padding-left: 10px;
-    }
-  
-    #card-description {
-      height: 90%;
-    }
-  
-    #imgBackground {
-      display: none;
-    }
+
+  #description p {
+    padding-top: 15px;
+    font-size: 16px;
   }
-  
-  @media (min-width: 660px) and (max-width: 768px) {
-    
-  
-    #bannerArea {
-      width: 100%;
-      height: 85%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    #contactArea {
-      display: none;
-    }
-  
-    .contactMobile {
-      background-color: rgb(22, 1, 46);
-      position: fixed;
-      width: 100%;
-      padding: 10px;
-      bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-  
-    #contactArea {
-      display: none;
-    }
-  
-    #mainInfo {
-      justify-content: flex-start;
-    }
-  
-    #bannerInfo {
-      width: 50%;
-      padding-left: 20px;
-    }
-    #description {
-      width: 100%;
-    }
-    #description h1 {
-      font-size: 80px;
-    }
-  
-    #description p {
-      font-size: 20px;
-    }
-  
-    #infoCard {
-      width: 100%;
-    }
-  
-    #boxVideo {
-      flex: 2;
-      height: 80%;
-    }
-  
-    #card-description h3 {
-      font-size: 18px;
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #card-description small {
-      font-size: 12px;
-      padding-left: 10px;
-    }
-  
-    #card-description {
-      height: 60%;
-      background: linear-gradient(
-        100deg,
-        rgba(255, 255, 255, 0.384) 40%,
-        transparent 90%
-      );
-    }
-  
-    #imgBackground {
-      width: 60%;
-      margin-right: -200px;
-    }
-  
-    #imgBackground img {
-      width: 100%;
-      height: 100%;
-    }
+
+  #contactArea {
+    gap: 25px;
+    padding-left: 35px;
   }
-  
-  @media (min-width: 768px) and (max-width: 1280px) {
-   
-    #bannerArea {
-      width: 100%;
-      height: 85%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    #contactArea {
-      display: none;
-    }
-  
-    .contactMobile {
-      background-color: rgb(22, 1, 46);
-      position: fixed;
-      width: 100%;
-      padding: 10px;
-      bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-  
-    #contactArea {
-      display: none;
-    }
-  
-    #mainInfo {
-      justify-content: flex-start;
-    }
-  
-    #bannerInfo {
-      width: 50%;
-      padding-left: 20px;
-    }
-    #description {
-      width: 100%;
-    }
-    #description h1 {
-      font-size: 80px;
-    }
-  
-    #description p {
-      font-size: 20px;
-    }
-  
-    #infoCard {
-      width: 100%;
-    }
-  
-    #boxVideo {
-      flex: 2;
-      height: 80%;
-    }
-  
-    #card-description h3 {
-      font-size: 18px;
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #card-description small {
-      font-size: 12px;
-      padding-left: 10px;
-    }
-  
-    #card-description {
-      height: 60%;
-      background: linear-gradient(
-        100deg,
-        rgba(255, 255, 255, 0.384) 40%,
-        transparent 90%
-      );
-    }
-  
-    #imgBackground {
-      width: 60%;
-      margin-right: -200px;
-    }
-  
-    #imgBackground img {
-      width: 100%;
-      height: 100%;
-    }
+
+  #boxVideo {
+    height: 160px;
+    width: 200px;
   }
-  
+
+  #card-description {
+    height: 130px;
+  }
+
+  #card-description h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  #card-description small {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+
+  #imgBackground {
+    width: 50%;
+  }
+
+  #imgBackground img {
+    width: 90%;
+    max-height: 90%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #bannerInfo {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  #description {
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 60%;
+  }
+
+  #description h1 {
+    width: 80%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 30px;
+  }
+
+  #description p {
+    width: 80%;
+    padding-top: 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
+  #contactArea {
+    display: none;
+  }
+
+  #infoCard {
+    height: 40%;
+  }
+
+  #boxVideo {
+    height: 120px;
+    width: 180px;
+  }
+
+  #card-description {
+    height: 105px;
+    width: 80%;
+  }
+
+  #card-description h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  #card-description small {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+
+  #imgBackground {
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    top: -180px;
+    right: 0px;
+    margin-right: -200px;
+  }
+
+  #imgBackground img {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .contactMobile {
+    background-color: rgb(22, 1, 46);
+    position: fixed;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+  #bannerInfo {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  #description {
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 60%;
+  }
+
+  #description h1 {
+    width: 80%;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+
+  #description p {
+    width: 80%;
+    padding-top: 18px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+  }
+  #contactArea {
+    display: none;
+  }
+
+  #infoCard {
+    height: 40%;
+  }
+
+  #boxVideo {
+    height: 150px;
+    width: 180px;
+  }
+
+  #card-description {
+    height: 120px;
+    width: 80%;
+  }
+
+  #card-description h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  #card-description small {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+
+  #imgBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -300px;
+    right: 0px;
+    margin-right: -290px;
+    transform: rotate(255deg);
+  }
+
+  #imgBackground img {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  .contactMobile {
+    background-color: rgb(22, 1, 46);
+    position: fixed;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #bannerInfo {
+    width: 100%;
+    padding-left: 20px;
+  }
+  #description {
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 60%;
+  }
+
+  #description h1 {
+    width: 90%;
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  #description p {
+    width: 90%;
+    font-size: 22px;
+  }
+  #contactArea {
+    display: none;
+  }
+
+  #infoCard {
+    height: 40%;
+  }
+
+  #boxVideo {
+    height: 180px;
+    width: 200px;
+  }
+
+  #card-description {
+    height: 150px;
+    width: 90%;
+  }
+
+  #card-description h3 {
+    font-size: 28px;
+  }
+
+  #card-description small {
+    font-size: 15px;
+  }
+
+  #imgBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -500px;
+    right: 0px;
+    margin-right: -500px;
+    transform: rotate(-300deg);
+  }
+
+  #imgBackground img {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .contactMobile {
+    background-color: rgb(22, 1, 46);
+    position: fixed;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

@@ -4,7 +4,7 @@ import "./style.css";
 import { Close, Menu } from "@mui/icons-material/";
 import Items from "./Items";
 
-export default function Header() {
+export default function Header({background}) {
   const [isMobile, setIsMobile] = useState(true);
 
   const handleMenuMobile = () => {
@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className={background ? 'backgroudHeader': ''}>
       <nav className={isMobile ? "navbar active" : "navbar"}>
         <button className="btnMenuMobile" onClick={handleMenuMobile}>
           {isMobile ? (
