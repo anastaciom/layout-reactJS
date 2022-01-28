@@ -1,26 +1,55 @@
-#areaPhotos{
-    width: 100%;
-    height: auto;
-    background-color: red;
-    margin-top: 50px;
-    padding: 10px;
-    color: #fff;
+#areaPhotos {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 10px;
+  color: #fff;
 }
 
-#titleAreaPhotos{
-    text-align: center;
+#titleAreaPhotos h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-#searchPhotos{
-    width: inherit;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+#searchPhotos {
+  width: inherit;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 8px;
 }
 
-.gridPhotos{
-    display: grid;
+#searchPhotos input {
+  padding: 5px;
+  flex: 3;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-bottom: 2px purple solid;
+  border-radius: 8px;
+}
+#searchPhotos label {
+  font-size: 20px;
+}
+#searchPhotos button {
+  padding: 8px;
+  flex: 1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+
+.gridPhotos {
+  display: grid;
 }
