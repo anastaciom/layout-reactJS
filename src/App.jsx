@@ -7,7 +7,6 @@ import Loading from "./components/Loading";
 
 function App() {
   const [loading, setLoading] = useState(false);
-
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

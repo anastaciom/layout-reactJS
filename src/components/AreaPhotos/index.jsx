@@ -1,5 +1,8 @@
 import React from "react";
+import AreaSearch from "./AreaSearch";
+import GridPhotos from "./GridPhotos";
 import "./style.css";
+
 
 export default function AreaPhotos() {
   return (
@@ -7,25 +10,8 @@ export default function AreaPhotos() {
       <div id="titleAreaPhotos">
         <h1>Photos</h1>
       </div>
-      <div id="searchPhotos">
-        <label htmlFor="search">Search for Date:</label>
-        <input type="Date" id="search" />
-      </div>
-
-    <div className="gridPhotos">
-        <span>
-            foto1
-        </span>
-        <span>
-            foto1
-        </span>
-        <span>
-            foto1
-        </span>
-        <span>
-            foto1
-        </span>
-    </div>
+     <AreaSearch/>
+     <GridPhotos/>
     </section>
   );
 }
