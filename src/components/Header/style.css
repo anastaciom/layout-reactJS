@@ -1,276 +1,209 @@
 header {
-    width: 95%;
-    margin: auto;
-    padding: 40px;
-    border-bottom: 1px solid rgb(37, 35, 41);
-  }
-  .btnMenuMobile {
-    display: none;
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    justify-content: space-between;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 18px;
-  }
-  
-  .navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    list-style: none;
-  }
-  
-  .navItem {
-    cursor: pointer;
-  }
-  
-  .navItem:hover {
-    color: rgb(211, 69, 3);
-    transition: all 0.6s;
-  }
-  
-  #btnStart {
-    outline: none;
-    border: 1px solid #fff;
-    background-color: transparent;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 19px;
-    cursor: pointer;
-  }
-  
-  #btnStart:hover {
-    background-color: #fff;
-    color: rgb(25, 17, 47);
-    transition: all 0.6s;
-  }
+  width: 95%;
+  padding: 30px;
+  border-bottom: 1px solid rgb(37, 35, 41);
+  position: fixed;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, -0%);
+  z-index: 1000;
+}
+
+.backgroudHeader {
+  background: rgba(28, 18, 53, 0.959);
+  background: linear-gradient(
+    57deg,
+    rgba(28, 18, 53, 0.959) 20%,
+    rgba(0, 0, 0, 0.911) 78%
+  );
+}
+
+.btnMenuMobile {
+  display: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  list-style: none;
+}
+
+.navItem {
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: rgb(211, 69, 3);
+  transition: all 0.6s;
+}
+
+#btnStart {
+  outline: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#btnStart:hover {
+  background-color: #fff;
+  color: rgb(25, 17, 47);
+  transition: all 0.6s;
+}
 
 /* ============================================================= */
 
-  @media (width: 1366px) {
-    header {
-      padding: 20px;
-    }
-  
-    #btnStart {
-      padding: 8px 15px;
-      font-size: 16px;
-    }
+@media (width: 1366px) {
+  header {
+    padding: 25px;
   }
-  
-  @media screen and (max-width: 660px) {
-    header {
-      width: 100%;
-      padding: 10px;
-      border-bottom: 1px solid rgb(37, 35, 41);
+
+  .navbar {
+    font-size: 15px;
+  }
+
+  #btnStart {
+    font-size: 16px;
+  }
+  #logo img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btnMenuMobile {
+    display: initial;
+    z-index: 1000;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .btnMenuMobile:active,
+  .btnMenuMobile:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .active ul {
+    background-color: rgba(0, 0, 0, 0.959);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: showMenuBar;
+    animation-duration: 0.5s;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  @keyframes showMenuBar {
+    from {
+      width: 0%;
     }
-    .btnMenuMobile {
-      display: initial;
-      z-index: 1000;
-      border: none;
-      background-color: transparent;
-      outline: none;
-      color: #fff;
-      padding: 8px;
-      border-radius: 10px;
-    }
-  
-    .btnMenuMobile:active,
-    .btnMenuMobile:hover {
-      background-color: rgba(0, 0, 0, 0.479);
-    }
-  
-    #logo img {
-      width: 120px;
-      height: 100%;
-    }
-    .navbar {
-      display: flex;
-      align-items: center;
-      color: #fff;
-      justify-content: space-between;
-      text-transform: capitalize;
-      letter-spacing: 1px;
-      font-size: 18px;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  
-    .active ul {
-      background-color: rgba(0, 0, 0, 0.979);
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
+    to {
       width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      z-index: 999;
-      border-radius: 0px 20px 20px 0px;
-      animation-name: showMenuBar;
-      animation-duration: 0.5s;
-    }
-  
-    @keyframes showMenuBar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 90%;
-      }
-    }
-  
-    .navItem {
-      cursor: pointer;
-    }
-  
-    #btnStart {
-      padding: 5px 8px;
-      font-size: 14px;
     }
   }
-  
-  @media (min-width: 660px) and (max-width: 768px) {
-    header {
-      width: 95%;
-      margin: auto;
-      padding: 25px;
+
+  .navItem {
+    cursor: pointer;
+  }
+
+  #btnStart {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 1280px) {
+  header {
+    width: 100%;
+  }
+
+  .btnMenuMobile {
+    display: initial;
+    z-index: 1000;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .btnMenuMobile:active,
+  .btnMenuMobile:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .active ul {
+    background-color: rgba(0, 0, 0, 0.959);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: showMenuBar;
+    animation-duration: 0.5s;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  @keyframes showMenuBar {
+    from {
+      width: 0%;
     }
-    .btnMenuMobile {
-      display: initial;
-      z-index: 1000;
-      border: none;
-      background-color: transparent;
-      outline: none;
-      color: #fff;
-      padding: 8px;
-      border-radius: 10px;
-    }
-  
-    .btnMenuMobile:active,
-    .btnMenuMobile:hover {
-      background-color: rgba(0, 0, 0, 0.479);
-    }
-  
-    #logo img {
-      width: initial;
-      height: initial;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  
-    .active ul {
-      background-color: rgba(0, 0, 0, 0.979);
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
+    to {
       width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;
-      z-index: 999;
-      border-radius: 0px 20px 20px 0px;
-      animation-name: showMenuBar;
-      animation-duration: 0.5s;
-    }
-  
-    @keyframes showMenuBar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 90%;
-      }
-    }
-  
-    .navItem {
-      cursor: pointer;
-      font-size: 30px;
-    }
-  
-    #btnStart {
-      padding: 8px 15px;
     }
   }
-  
-  @media (min-width: 768px) and (max-width: 1280px) {
-    header {
-      width: 95%;
-      margin: auto;
-      padding: 25px;
-    }
-    .btnMenuMobile {
-      display: initial;
-      z-index: 1000;
-      border: none;
-      background-color: transparent;
-      outline: none;
-      color: #fff;
-      padding: 8px;
-      border-radius: 10px;
-    }
-  
-    .btnMenuMobile:active,
-    .btnMenuMobile:hover {
-      background-color: rgba(0, 0, 0, 0.479);
-    }
-  
-    #logo img {
-      width: initial;
-      height: initial;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  
-    .active ul {
-      background-color: rgba(0, 0, 0, 0.979);
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;
-      z-index: 999;
-      border-radius: 0px 20px 20px 0px;
-      animation-name: showMenuBar;
-      animation-duration: 0.5s;
-    }
-  
-    @keyframes showMenuBar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 90%;
-      }
-    }
-  
-    .navItem {
-      cursor: pointer;
-      font-size: 30px;
-    }
-  
-    #btnStart {
-      padding: 8px 15px;
-    }
+
+  .navItem {
+    cursor: pointer;
+    font-size: 30px;
   }
-  
+}
