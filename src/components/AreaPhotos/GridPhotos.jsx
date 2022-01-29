@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { LoadingAlert, PhotoNotFoundAlert } from "./Alerts";
+import Photos from "./Photos";
 export default function GridPhotos() {
   const state = useSelector((state) => state.result);
 
@@ -12,7 +13,7 @@ export default function GridPhotos() {
       return <LoadingAlert />;
     }
     return state.photos.map((photo, index) => {
-      return <img src={photo.img_src} alt={index} key={index} />;
+      return <Photos key={index} photo={photo} index={index} />;
     });
   };
 
