@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "layout-challenge",
   "version": "0.1.0",
   "private": true,
