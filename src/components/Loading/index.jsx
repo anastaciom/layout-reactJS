@@ -39,7 +39,7 @@ export default function Loading({ loading }) {
           <LinearProgress
             variant="determinate"
             value={progressBar}
-            color="secondary"
+            color="inherit"
             id="linearProgress"
           />
           <h5>{progressBar}%</h5>

@@ -7,10 +7,9 @@ export default function GridPhotos() {
 
   const renderPhotos = () => {
     if (state.loading) {
-      if (state.photos.length === 0) {
-        return <PhotoNotFoundAlert />;
-      }
       return <LoadingAlert />;
+    } if (state.photos.length === 0) {
+      return <PhotoNotFoundAlert />;
     }
     return state.photos.map((photo, index) => {
       return <Photos key={index} photo={photo} index={index} />;
